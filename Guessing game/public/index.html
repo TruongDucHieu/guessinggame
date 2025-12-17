@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Guess Master</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-wrapper">
+        <header>
+            <h1 class="neon-text">GUESS <span class="cyan-glow">57</span></h1>
+            <div class="status-bar">HỆ THỐNG TRỰC TUYẾN</div>
+        </header>
+
+        <main class="game-box" id="gameBox">
+            <div class="display-area">
+                <input type="text" id="userGuess" maxlength="5" placeholder="_____" autocomplete="off">
+                <div id="feedback" class="feedback">SẴN SÀNG?</div>
+            </div>
+            
+            <button id="guessBtn" class="neon-btn">XÁC NHẬN</button>
+            
+            <div class="stats">
+                LẦN THỬ: <span id="attempts" class="cyan-glow">0</span>
+            </div>
+        </main>
+
+        <aside class="leaderboard">
+            <h3>BẢNG VÀNG</h3>
+            <div class="table-container">
+                <table id="leaderboardTable">
+                    <thead>
+                        <tr><th>TOP</th><th>PLAYER</th><th>SCORE</th></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
